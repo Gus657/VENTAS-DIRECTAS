@@ -13,12 +13,12 @@ using MySql.Data.MySqlClient;
 namespace VENTAS_DIRECTAS
 {
 	
-	public partial class Clientes : Form
+	public partial class Productos : Form
 	{
 		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username =root; password =; database =ventasdirectas");
 
 
-		public Clientes()
+		public Productos()
 		{
 			InitializeComponent();
 			textBox1.Enabled = false;
@@ -54,7 +54,7 @@ namespace VENTAS_DIRECTAS
 
 			MySqlCommand codigo = new MySqlCommand();
 			codigo.Connection = databaseConnection;
-			codigo.CommandText = ("SELECT * FROM clientes");
+			codigo.CommandText = ("SELECT * FROM productos");
 			try
 			{
 				MySqlDataAdapter ejecutar = new MySqlDataAdapter();
@@ -75,8 +75,8 @@ namespace VENTAS_DIRECTAS
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			string query = "UPDATE clientes SET nombre_completo ='" + textBox2.Text + "', telefono = '" + textBox3.Text 
-				+ "', direccion='" + textBox4.Text +"', email='" + textBox5.Text + "', estado='" + textBox6.Text + "' WHERE  codigo =" + textBox1.Text;
+			string query = "UPDATE productos SET nombre ='" + textBox2.Text + "', Presentacion = '" + textBox3.Text 
+				+ "', precio=" + textBox4.Text +" WHERE  codigo =" + textBox1.Text;
 			databaseConnection.Open();
 			MySqlCommand consulta = new MySqlCommand(query, databaseConnection);
 			try
@@ -91,8 +91,6 @@ namespace VENTAS_DIRECTAS
 					textBox2.Text = "";
 					textBox3.Text = "";
 					textBox4.Text = "";
-					textBox5.Text = "";
-					textBox6.Text = "";
 
 					tabControl1.SelectedIndex = 0;
 				}
@@ -108,14 +106,14 @@ namespace VENTAS_DIRECTAS
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			string query = "INSERT INTO clientes(nombre_completo,telefono,direccion,email,estado )"
+			string query = "INSERT INTO productos(nombre,presentacion,precio )"
 				+" VALUES ('" + textBox2.Text + "','" + textBox3.Text + "',"
-				+ "'"+ textBox4.Text + "','" + textBox5.Text + "','" + textBox6.Text + "')";
+				+ ""+ textBox4.Text + ")";
 			databaseConnection.Open();
 			MySqlCommand consulta = new MySqlCommand(query, databaseConnection);
 			try
 			{
-				if ( textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "")
+				if ( textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" )
 				{
 					consulta.ExecuteNonQuery();
 					MessageBox.Show("INGRSO CORRECTO");
@@ -123,8 +121,6 @@ namespace VENTAS_DIRECTAS
 					textBox3.Text = "";
 					textBox2.Text = "";
 					textBox4.Text = "";
-					textBox5.Text = "";
-					textBox6.Text = "";
 					databaseConnection.Close();
 					llenartabla();
 					tabControl1.SelectedIndex = 0;
@@ -141,7 +137,7 @@ namespace VENTAS_DIRECTAS
 
 		private void button5_Click(object sender, EventArgs e)
 		{
-			string query = "DELETE FROM clientes WHERE  codigo =" + dataGridView1.CurrentRow.Cells[0].Value.ToString();
+			string query = "DELETE FROM productos  where  codigo =" + dataGridView1.CurrentRow.Cells[0].Value.ToString();
 			databaseConnection.Open();
 			MySqlCommand consulta = new MySqlCommand(query, databaseConnection);
 			try
@@ -196,8 +192,6 @@ namespace VENTAS_DIRECTAS
 			textBox2.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
 			textBox3.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
 			textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-			textBox5.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-			textBox6.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
 			tabControl1.SelectedIndex = 1;
 			button3.Enabled = true; button3.BackColor = System.Drawing.Color.White;
 			button1.Enabled = false; button1.BackColor = System.Drawing.Color.Gray;
@@ -209,8 +203,6 @@ namespace VENTAS_DIRECTAS
 			textBox2.Text = "";
 			textBox3.Text = "";
 			textBox4.Text = "";
-			textBox5.Text = "";
-			textBox6.Text = "";
 			tabControl1.SelectedIndex = 0;
 		}
 

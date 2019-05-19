@@ -72,5 +72,47 @@ namespace VENTAS_DIRECTAS
 			nuevo.MdiParent = this;
 			nuevo.Show();
 		}
+
+		private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Proveedores nuevo = new Proveedores();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
+
+		private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Sucursales nuevo = new Sucursales();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
+
+		private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Productos nuevo = new Productos();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
+
+		private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Ventas nuevo = new Ventas();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
+
+		private void comprasToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Compras nuevo = new Compras();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
+
+		private void bodegasToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Bodegas nuevo = new Bodegas();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
 	}
 }

@@ -50,6 +50,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bodegas.Designer.cs">
+      <DependentUpon>Bodegas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sucursales.Designer.cs">
+      <DependentUpon>Sucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +106,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bodegas.resx">
+      <DependentUpon>Bodegas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sucursales.resx">
+      <DependentUpon>Sucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>

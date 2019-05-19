@@ -1,6 +1,6 @@
 ﻿namespace VENTAS_DIRECTAS
 {
-	partial class Clientes
+	partial class Sucursales
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -367,7 +367,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(163, 56);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "Nombre Completo";
+			this.label2.Text = "Nombre";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label3
@@ -403,7 +403,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(163, 56);
 			this.label5.TabIndex = 4;
-			this.label5.Text = "Email";
+			this.label5.Text = "Encargado";
 			this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label6
@@ -415,7 +415,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(163, 56);
 			this.label6.TabIndex = 5;
-			this.label6.Text = "Nit";
+			this.label6.Text = "Estado";
 			this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// textBox1
@@ -464,7 +464,7 @@
 			this.textBox6.Size = new System.Drawing.Size(248, 22);
 			this.textBox6.TabIndex = 11;
 			// 
-			// Clientes
+			// Sucursales
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -472,9 +472,9 @@
 			this.ClientSize = new System.Drawing.Size(966, 599);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-			this.Name = "Clientes";
+			this.Name = "Sucursales";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Clientes";
+			this.Text = "Sucursales";
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tabControl1.ResumeLayout(false);

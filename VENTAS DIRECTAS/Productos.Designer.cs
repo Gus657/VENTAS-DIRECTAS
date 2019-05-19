@@ -1,6 +1,6 @@
 ﻿namespace VENTAS_DIRECTAS
 {
-	partial class Clientes
+	partial class Productos
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -47,14 +47,10 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tabControl1.SuspendLayout();
@@ -323,14 +319,10 @@
 			this.tableLayoutPanel3.Controls.Add(this.label2, 1, 2);
 			this.tableLayoutPanel3.Controls.Add(this.label3, 1, 3);
 			this.tableLayoutPanel3.Controls.Add(this.label4, 1, 4);
-			this.tableLayoutPanel3.Controls.Add(this.label5, 1, 5);
-			this.tableLayoutPanel3.Controls.Add(this.label6, 1, 6);
 			this.tableLayoutPanel3.Controls.Add(this.textBox1, 2, 1);
 			this.tableLayoutPanel3.Controls.Add(this.textBox2, 2, 2);
 			this.tableLayoutPanel3.Controls.Add(this.textBox3, 2, 3);
 			this.tableLayoutPanel3.Controls.Add(this.textBox4, 2, 4);
-			this.tableLayoutPanel3.Controls.Add(this.textBox5, 2, 5);
-			this.tableLayoutPanel3.Controls.Add(this.textBox6, 2, 6);
 			this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
 			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -367,7 +359,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(163, 56);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "Nombre Completo";
+			this.label2.Text = "Nombre";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label3
@@ -379,7 +371,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(163, 56);
 			this.label3.TabIndex = 2;
-			this.label3.Text = "Telefono";
+			this.label3.Text = "Presentacion";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label4
@@ -391,32 +383,8 @@
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(163, 56);
 			this.label4.TabIndex = 3;
-			this.label4.Text = "Direccion";
+			this.label4.Text = "Precio";
 			this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(19, 242);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(163, 56);
-			this.label5.TabIndex = 4;
-			this.label5.Text = "Email";
-			this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(19, 298);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(163, 56);
-			this.label6.TabIndex = 5;
-			this.label6.Text = "Nit";
-			this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// textBox1
 			// 
@@ -449,22 +417,7 @@
 			this.textBox4.Size = new System.Drawing.Size(588, 22);
 			this.textBox4.TabIndex = 9;
 			// 
-			// textBox5
-			// 
-			this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox5.Location = new System.Drawing.Point(188, 245);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(588, 22);
-			this.textBox5.TabIndex = 10;
-			// 
-			// textBox6
-			// 
-			this.textBox6.Location = new System.Drawing.Point(188, 301);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(248, 22);
-			this.textBox6.TabIndex = 11;
-			// 
-			// Clientes
+			// Productos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -472,9 +425,9 @@
 			this.ClientSize = new System.Drawing.Size(966, 599);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-			this.Name = "Clientes";
+			this.Name = "Productos";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Clientes";
+			this.Text = "Productos";
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tabControl1.ResumeLayout(false);
@@ -507,13 +460,9 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox6;
 	}
 }

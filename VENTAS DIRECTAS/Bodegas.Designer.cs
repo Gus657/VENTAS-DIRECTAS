@@ -1,6 +1,6 @@
 ﻿namespace VENTAS_DIRECTAS
 {
-	partial class Clientes
+	partial class Bodegas
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -50,11 +50,11 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.textBox5 = new System.Windows.Forms.TextBox();
 			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tabControl1.SuspendLayout();
@@ -326,11 +326,11 @@
 			this.tableLayoutPanel3.Controls.Add(this.label5, 1, 5);
 			this.tableLayoutPanel3.Controls.Add(this.label6, 1, 6);
 			this.tableLayoutPanel3.Controls.Add(this.textBox1, 2, 1);
-			this.tableLayoutPanel3.Controls.Add(this.textBox2, 2, 2);
 			this.tableLayoutPanel3.Controls.Add(this.textBox3, 2, 3);
 			this.tableLayoutPanel3.Controls.Add(this.textBox4, 2, 4);
 			this.tableLayoutPanel3.Controls.Add(this.textBox5, 2, 5);
 			this.tableLayoutPanel3.Controls.Add(this.textBox6, 2, 6);
+			this.tableLayoutPanel3.Controls.Add(this.comboBox1, 2, 2);
 			this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
 			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -367,7 +367,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(163, 56);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "Nombre Completo";
+			this.label2.Text = "Sucursal";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label3
@@ -403,7 +403,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(163, 56);
 			this.label5.TabIndex = 4;
-			this.label5.Text = "Email";
+			this.label5.Text = "Encargado";
 			this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label6
@@ -415,7 +415,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(163, 56);
 			this.label6.TabIndex = 5;
-			this.label6.Text = "Nit";
+			this.label6.Text = "Estado";
 			this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// textBox1
@@ -424,14 +424,6 @@
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(67, 22);
 			this.textBox1.TabIndex = 6;
-			// 
-			// textBox2
-			// 
-			this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox2.Location = new System.Drawing.Point(188, 77);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(588, 22);
-			this.textBox2.TabIndex = 7;
 			// 
 			// textBox3
 			// 
@@ -464,7 +456,16 @@
 			this.textBox6.Size = new System.Drawing.Size(248, 22);
 			this.textBox6.TabIndex = 11;
 			// 
-			// Clientes
+			// comboBox1
+			// 
+			this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(188, 77);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(588, 24);
+			this.comboBox1.TabIndex = 12;
+			// 
+			// Bodegas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -472,9 +473,9 @@
 			this.ClientSize = new System.Drawing.Size(966, 599);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-			this.Name = "Clientes";
+			this.Name = "Bodegas";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Clientes";
+			this.Text = "Bodegas";
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tabControl1.ResumeLayout(false);
@@ -510,10 +511,10 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.TextBox textBox4;
 		private System.Windows.Forms.TextBox textBox5;
 		private System.Windows.Forms.TextBox textBox6;
+		private System.Windows.Forms.ComboBox comboBox1;
 	}
 }

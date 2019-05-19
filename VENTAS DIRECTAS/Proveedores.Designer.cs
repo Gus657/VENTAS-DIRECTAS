@@ -1,6 +1,6 @@
 ﻿namespace VENTAS_DIRECTAS
 {
-	partial class Clientes
+	partial class Proveedores
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
 			this.button1 = new System.Windows.Forms.Button();
@@ -290,8 +290,8 @@
 			// 
 			// dataGridView1
 			// 
-			dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
 			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -367,7 +367,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(163, 56);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "Nombre Completo";
+			this.label2.Text = "Nombre ";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label3
@@ -464,7 +464,7 @@
 			this.textBox6.Size = new System.Drawing.Size(248, 22);
 			this.textBox6.TabIndex = 11;
 			// 
-			// Clientes
+			// Proveedores
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -472,9 +472,9 @@
 			this.ClientSize = new System.Drawing.Size(966, 599);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-			this.Name = "Clientes";
+			this.Name = "Proveedores";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Clientes";
+			this.Text = "Proveedores";
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tabControl1.ResumeLayout(false);

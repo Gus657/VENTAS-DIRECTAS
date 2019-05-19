@@ -13,12 +13,12 @@ using MySql.Data.MySqlClient;
 namespace VENTAS_DIRECTAS
 {
 	
-	public partial class Clientes : Form
+	public partial class Proveedores : Form
 	{
 		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username =root; password =; database =ventasdirectas");
 
 
-		public Clientes()
+		public Proveedores()
 		{
 			InitializeComponent();
 			textBox1.Enabled = false;
@@ -54,7 +54,7 @@ namespace VENTAS_DIRECTAS
 
 			MySqlCommand codigo = new MySqlCommand();
 			codigo.Connection = databaseConnection;
-			codigo.CommandText = ("SELECT * FROM clientes");
+			codigo.CommandText = ("SELECT * FROM proveedor");
 			try
 			{
 				MySqlDataAdapter ejecutar = new MySqlDataAdapter();
@@ -75,8 +75,8 @@ namespace VENTAS_DIRECTAS
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			string query = "UPDATE clientes SET nombre_completo ='" + textBox2.Text + "', telefono = '" + textBox3.Text 
-				+ "', direccion='" + textBox4.Text +"', email='" + textBox5.Text + "', estado='" + textBox6.Text + "' WHERE  codigo =" + textBox1.Text;
+			string query = "UPDATE proveedor SET nombre ='" + textBox2.Text + "', telefono = '" + textBox3.Text 
+				+ "', direccion='" + textBox4.Text +"', email='" + textBox5.Text + "', nit='" + textBox6.Text + "' WHERE  codigo =" + textBox1.Text;
 			databaseConnection.Open();
 			MySqlCommand consulta = new MySqlCommand(query, databaseConnection);
 			try
@@ -108,7 +108,7 @@ namespace VENTAS_DIRECTAS
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			string query = "INSERT INTO clientes(nombre_completo,telefono,direccion,email,estado )"
+			string query = "INSERT INTO proveedor(nombre,telefono,direccion,email,nit )"
 				+" VALUES ('" + textBox2.Text + "','" + textBox3.Text + "',"
 				+ "'"+ textBox4.Text + "','" + textBox5.Text + "','" + textBox6.Text + "')";
 			databaseConnection.Open();
@@ -141,7 +141,7 @@ namespace VENTAS_DIRECTAS
 
 		private void button5_Click(object sender, EventArgs e)
 		{
-			string query = "DELETE FROM clientes WHERE  codigo =" + dataGridView1.CurrentRow.Cells[0].Value.ToString();
+			string query = "DELETE FROM proveedor WHERE  codigo =" + dataGridView1.CurrentRow.Cells[0].Value.ToString();
 			databaseConnection.Open();
 			MySqlCommand consulta = new MySqlCommand(query, databaseConnection);
 			try
