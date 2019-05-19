@@ -28,14 +28,20 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+			this.button1 = new System.Windows.Forms.Button();
+			this.button2 = new System.Windows.Forms.Button();
+			this.button3 = new System.Windows.Forms.Button();
+			this.button4 = new System.Windows.Forms.Button();
+			this.button5 = new System.Windows.Forms.Button();
+			this.button6 = new System.Windows.Forms.Button();
+			this.button7 = new System.Windows.Forms.Button();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.button7 = new System.Windows.Forms.Button();
+			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -49,18 +55,12 @@
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.textBox5 = new System.Windows.Forms.TextBox();
 			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
-			this.button6 = new System.Windows.Forms.Button();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
-			this.tabPage2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			this.tabPage2.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -110,6 +110,156 @@
 			this.tableLayoutPanel2.Size = new System.Drawing.Size(863, 83);
 			this.tableLayoutPanel2.TabIndex = 0;
 			// 
+			// button1
+			// 
+			this.button1.BackColor = System.Drawing.Color.White;
+			this.button1.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Ingresar;
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
+			this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+			this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.button1.Location = new System.Drawing.Point(3, 3);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(117, 77);
+			this.button1.TabIndex = 0;
+			this.button1.Text = "Ingresar";
+			this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
+			// 
+			// button2
+			// 
+			this.button2.BackColor = System.Drawing.Color.White;
+			this.button2.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Editar;
+			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
+			this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+			this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.button2.Location = new System.Drawing.Point(126, 3);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(117, 77);
+			this.button2.TabIndex = 1;
+			this.button2.Text = "Editar";
+			this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button2.UseVisualStyleBackColor = false;
+			// 
+			// button3
+			// 
+			this.button3.BackColor = System.Drawing.Color.White;
+			this.button3.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Guardar;
+			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
+			this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+			this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.button3.Location = new System.Drawing.Point(249, 3);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(117, 77);
+			this.button3.TabIndex = 2;
+			this.button3.Text = "Guardar";
+			this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button3.UseVisualStyleBackColor = false;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
+			// 
+			// button4
+			// 
+			this.button4.BackColor = System.Drawing.Color.White;
+			this.button4.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Cancelar;
+			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
+			this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+			this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+			this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.button4.Location = new System.Drawing.Point(372, 3);
+			this.button4.Name = "button4";
+			this.button4.Size = new System.Drawing.Size(117, 77);
+			this.button4.TabIndex = 3;
+			this.button4.Text = "Cancelar";
+			this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button4.UseVisualStyleBackColor = false;
+			// 
+			// button5
+			// 
+			this.button5.BackColor = System.Drawing.Color.White;
+			this.button5.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Borrar;
+			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
+			this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+			this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+			this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.button5.Location = new System.Drawing.Point(495, 3);
+			this.button5.Name = "button5";
+			this.button5.Size = new System.Drawing.Size(117, 77);
+			this.button5.TabIndex = 4;
+			this.button5.Text = "Borrar";
+			this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button5.UseVisualStyleBackColor = false;
+			this.button5.Click += new System.EventHandler(this.button5_Click);
+			// 
+			// button6
+			// 
+			this.button6.BackColor = System.Drawing.Color.White;
+			this.button6.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Refrescar;
+			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.button6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
+			this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+			this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+			this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.button6.Location = new System.Drawing.Point(618, 3);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(117, 77);
+			this.button6.TabIndex = 5;
+			this.button6.Text = "Refrescar";
+			this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button6.UseVisualStyleBackColor = false;
+			// 
+			// button7
+			// 
+			this.button7.BackColor = System.Drawing.Color.White;
+			this.button7.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Salir;
+			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.button7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
+			this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+			this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+			this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.button7.Location = new System.Drawing.Point(741, 3);
+			this.button7.Name = "button7";
+			this.button7.Size = new System.Drawing.Size(119, 77);
+			this.button7.TabIndex = 6;
+			this.button7.Text = "Salir";
+			this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.button7.UseVisualStyleBackColor = false;
+			// 
 			// tabControl1
 			// 
 			this.tabControl1.Controls.Add(this.tabPage1);
@@ -133,6 +283,19 @@
 			this.tabPage1.Text = "Clientes";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
+			// dataGridView1
+			// 
+			dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSteelBlue;
+			this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.dataGridView1.Size = new System.Drawing.Size(849, 378);
+			this.dataGridView1.TabIndex = 0;
+			// 
 			// tabPage2
 			// 
 			this.tabPage2.Controls.Add(this.tableLayoutPanel3);
@@ -143,40 +306,6 @@
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "Consulta";
 			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
-			// dataGridView1
-			// 
-			dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(849, 378);
-			this.dataGridView1.TabIndex = 0;
-			// 
-			// button7
-			// 
-			this.button7.BackColor = System.Drawing.Color.White;
-			this.button7.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Salir;
-			this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.button7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
-			this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-			this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-			this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button7.Location = new System.Drawing.Point(741, 3);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(119, 77);
-			this.button7.TabIndex = 6;
-			this.button7.Text = "Salir";
-			this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.button7.UseVisualStyleBackColor = false;
 			// 
 			// tableLayoutPanel3
 			// 
@@ -330,132 +459,6 @@
 			this.textBox6.Size = new System.Drawing.Size(248, 22);
 			this.textBox6.TabIndex = 11;
 			// 
-			// button1
-			// 
-			this.button1.BackColor = System.Drawing.Color.White;
-			this.button1.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Ingresar;
-			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
-			this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-			this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button1.Location = new System.Drawing.Point(3, 3);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(117, 77);
-			this.button1.TabIndex = 0;
-			this.button1.Text = "Ingresar";
-			this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.button1.UseVisualStyleBackColor = false;
-			// 
-			// button2
-			// 
-			this.button2.BackColor = System.Drawing.Color.White;
-			this.button2.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Editar;
-			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
-			this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-			this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button2.Location = new System.Drawing.Point(126, 3);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(117, 77);
-			this.button2.TabIndex = 1;
-			this.button2.Text = "Editar";
-			this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.button2.UseVisualStyleBackColor = false;
-			// 
-			// button3
-			// 
-			this.button3.BackColor = System.Drawing.Color.White;
-			this.button3.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Guardar;
-			this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.button3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
-			this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-			this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button3.Location = new System.Drawing.Point(249, 3);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(117, 77);
-			this.button3.TabIndex = 2;
-			this.button3.Text = "Guardar";
-			this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.button3.UseVisualStyleBackColor = false;
-			// 
-			// button4
-			// 
-			this.button4.BackColor = System.Drawing.Color.White;
-			this.button4.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Cancelar;
-			this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.button4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
-			this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-			this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-			this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button4.Location = new System.Drawing.Point(372, 3);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(117, 77);
-			this.button4.TabIndex = 3;
-			this.button4.Text = "Cancelar";
-			this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.button4.UseVisualStyleBackColor = false;
-			// 
-			// button5
-			// 
-			this.button5.BackColor = System.Drawing.Color.White;
-			this.button5.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Borrar;
-			this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.button5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
-			this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-			this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-			this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button5.Location = new System.Drawing.Point(495, 3);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(117, 77);
-			this.button5.TabIndex = 4;
-			this.button5.Text = "Borrar";
-			this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.button5.UseVisualStyleBackColor = false;
-			// 
-			// button6
-			// 
-			this.button6.BackColor = System.Drawing.Color.White;
-			this.button6.BackgroundImage = global::VENTAS_DIRECTAS.Properties.Resources.Refrescar;
-			this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.button6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlLight;
-			this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-			this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-			this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button6.Location = new System.Drawing.Point(618, 3);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(117, 77);
-			this.button6.TabIndex = 5;
-			this.button6.Text = "Refrescar";
-			this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.button6.UseVisualStyleBackColor = false;
-			// 
 			// Clientes
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -471,8 +474,8 @@
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
-			this.tabPage2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			this.tabPage2.ResumeLayout(false);
 			this.tableLayoutPanel3.ResumeLayout(false);
 			this.tableLayoutPanel3.PerformLayout();
 			this.ResumeLayout(false);
