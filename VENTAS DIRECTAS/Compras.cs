@@ -226,6 +226,7 @@ namespace VENTAS_DIRECTAS
 			textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
 			comboBox1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
 			comboBox2.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+			dateTimePicker1.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
 			tabControl1.SelectedIndex = 1;
 			button3.Enabled = true; button3.BackColor = System.Drawing.Color.White;
 			button1.Enabled = false; button1.BackColor = System.Drawing.Color.Gray;

@@ -13,18 +13,16 @@ using MySql.Data.MySqlClient;
 namespace VENTAS_DIRECTAS
 {
 	
-	public partial class Ventas : Form
+	public partial class Existencias : Form
 	{
 		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username =root; password =; database =ventasdirectas");
 
 
-		public Ventas()
+		public Existencias()
 		{
 			InitializeComponent();
 			textBox1.Enabled = false;
 			llenartabla();
-			dateTimePicker1.Format = DateTimePickerFormat.Custom;
-			dateTimePicker1.CustomFormat = "yyyy-MM-dd";
 
 			if (tabControl1.SelectedIndex.Equals(0))
 			{
@@ -56,7 +54,7 @@ namespace VENTAS_DIRECTAS
 
 			MySqlCommand codigo = new MySqlCommand();
 			codigo.Connection = databaseConnection;
-			codigo.CommandText = ("SELECT * FROM ventas");
+			codigo.CommandText = ("SELECT * FROM existencias");
 			try
 			{
 				MySqlDataAdapter ejecutar = new MySqlDataAdapter();
@@ -76,16 +74,16 @@ namespace VENTAS_DIRECTAS
 
 			try
 			{
-				comboBox1.Text = "Sucursales";
+				comboBox1.Text = "Producto";
 				comboBox1.Items.Clear();
 
 				databaseConnection.Open();
-				MySqlCommand command = new MySqlCommand("SELECT * FROM sucursales", databaseConnection);
+				MySqlCommand command = new MySqlCommand("SELECT * FROM productos", databaseConnection);
 				MySqlDataReader reader = command.ExecuteReader();
 				while (reader.Read())
 				{
 					comboBox1.Refresh();
-					comboBox1.Items.Add(reader.GetValue(1).ToString());
+					comboBox1.Items.Add(reader.GetValue(0).ToString() +" " +reader.GetValue(1).ToString());
 				}
 			}
 			catch (Exception ex)
@@ -96,11 +94,11 @@ namespace VENTAS_DIRECTAS
 
 			try
 			{
-				comboBox2.Text = "clientes";
+				comboBox2.Text = "Bodega";
 				comboBox2.Items.Clear();
 
 				databaseConnection.Open();
-				MySqlCommand command = new MySqlCommand("SELECT * FROM clientes", databaseConnection);
+				MySqlCommand command = new MySqlCommand("SELECT * FROM Bodega", databaseConnection);
 				MySqlDataReader reader = command.ExecuteReader();
 				while (reader.Read())
 				{
@@ -117,7 +115,7 @@ namespace VENTAS_DIRECTAS
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			string query = "UPDATE ventas SET sucursal ='" + comboBox1.Text + "', cod_cliente = " + comboBox2.Text[0] + ", fecha = '" + dateTimePicker1.Text
+			string query = "UPDATE ventas SET sucursal ='" + comboBox1.Text + "', cod_cliente = " + comboBox2.Text[0] + ", fecha = '" + ""
 				+ "' WHERE  codigo =" + textBox1.Text;
 			databaseConnection.Open();
 			MySqlCommand consulta = new MySqlCommand(query, databaseConnection);
@@ -145,13 +143,13 @@ namespace VENTAS_DIRECTAS
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			string query = "INSERT INTO ventas(sucursal, cod_cliente, fecha )"
-				+" VALUES ('" + comboBox1.Text + "'," + comboBox2.Text[0] + ",'" + dateTimePicker1.Text + "')";
+			string query = "INSERT INTO existencias(codigo_producto, codigo_bodega, documento, cantidad, concepto)"
+				+" VALUES (" + comboBox1.Text[0] + "," + comboBox2.Text[0] + ",'" + comboBox3.Text  + "'," + textBox2.Text + ",'" + comboBox4.Text + "')";
 			databaseConnection.Open();
 			MySqlCommand consulta = new MySqlCommand(query, databaseConnection);
 			try
 			{
-				if (comboBox2.Text != "Clientes" && comboBox1.Text != "Sucursales")
+				if (comboBox2.Text != "Producto" && comboBox1.Text != "Bodega" && textBox2.Text != "" && comboBox4.Text != "Concepto" && comboBox3.Text != "Documento")
 				{
 					consulta.ExecuteNonQuery();
 					MessageBox.Show("INGRSO CORRECTO");
@@ -172,7 +170,7 @@ namespace VENTAS_DIRECTAS
 
 		private void button5_Click(object sender, EventArgs e)
 		{
-			string query = "DELETE FROM ventas WHERE  codigo =" + dataGridView1.CurrentRow.Cells[0].Value.ToString();
+			string query = "DELETE FROM existencias WHERE  codigo =" + dataGridView1.CurrentRow.Cells[0].Value.ToString();
 			databaseConnection.Open();
 			MySqlCommand consulta = new MySqlCommand(query, databaseConnection);
 			try
@@ -226,7 +224,9 @@ namespace VENTAS_DIRECTAS
 			textBox1.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
 			comboBox1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
 			comboBox2.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-			dateTimePicker1.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+			comboBox3.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+			comboBox4.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+			textBox2.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
 			tabControl1.SelectedIndex = 1;
 			button3.Enabled = true; button3.BackColor = System.Drawing.Color.White;
 			button1.Enabled = false; button1.BackColor = System.Drawing.Color.Gray;
@@ -245,6 +245,29 @@ namespace VENTAS_DIRECTAS
 		private void button7_Click(object sender, EventArgs e)
 		{
 			this.Close();
+		}
+
+		private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			try
+			{
+				comboBox3.Text = "Documento";
+				comboBox3.Items.Clear();
+
+				databaseConnection.Open();
+				MySqlCommand command = new MySqlCommand("SELECT * FROM "+comboBox4.Text+"", databaseConnection);
+				MySqlDataReader reader = command.ExecuteReader();
+				while (reader.Read())
+				{
+					comboBox3.Refresh();
+					comboBox3.Items.Add(reader.GetValue(0).ToString() + " " + reader.GetValue(1).ToString() + " " + reader.GetValue(2).ToString());
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+			}
+			databaseConnection.Close();
 		}
 	}
 }

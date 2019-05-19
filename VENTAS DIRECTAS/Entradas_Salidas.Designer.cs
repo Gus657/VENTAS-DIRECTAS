@@ -1,6 +1,6 @@
 ﻿namespace VENTAS_DIRECTAS
 {
-	partial class Bodegas
+	partial class Existencias
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,7 +29,6 @@
 		private void InitializeComponent()
 		{
 			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
 			this.button1 = new System.Windows.Forms.Button();
@@ -47,20 +46,15 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
+			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.tabPage3 = new System.Windows.Forms.TabPage();
-			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-			this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.dataGridView2 = new System.Windows.Forms.DataGridView();
+			this.comboBox3 = new System.Windows.Forms.ComboBox();
+			this.comboBox4 = new System.Windows.Forms.ComboBox();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tabControl1.SuspendLayout();
@@ -68,10 +62,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.tabPage2.SuspendLayout();
 			this.tableLayoutPanel3.SuspendLayout();
-			this.tabPage3.SuspendLayout();
-			this.tableLayoutPanel4.SuspendLayout();
-			this.tableLayoutPanel5.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tableLayoutPanel1
@@ -278,7 +268,6 @@
 			// 
 			this.tabControl1.Controls.Add(this.tabPage1);
 			this.tabControl1.Controls.Add(this.tabPage2);
-			this.tabControl1.Controls.Add(this.tabPage3);
 			this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tabControl1.Location = new System.Drawing.Point(51, 150);
@@ -296,7 +285,7 @@
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage1.Size = new System.Drawing.Size(855, 384);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "Bodegas";
+			this.tabPage1.Text = "Consulta";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
 			// dataGridView1
@@ -320,7 +309,7 @@
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage2.Size = new System.Drawing.Size(855, 384);
 			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "Nuevo";
+			this.tabPage2.Text = "Datos";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
 			// tableLayoutPanel3
@@ -333,15 +322,15 @@
 			this.tableLayoutPanel3.Controls.Add(this.label1, 1, 1);
 			this.tableLayoutPanel3.Controls.Add(this.label2, 1, 2);
 			this.tableLayoutPanel3.Controls.Add(this.label3, 1, 3);
+			this.tableLayoutPanel3.Controls.Add(this.textBox1, 2, 1);
+			this.tableLayoutPanel3.Controls.Add(this.comboBox1, 2, 2);
+			this.tableLayoutPanel3.Controls.Add(this.comboBox2, 2, 3);
 			this.tableLayoutPanel3.Controls.Add(this.label4, 1, 4);
 			this.tableLayoutPanel3.Controls.Add(this.label5, 1, 5);
+			this.tableLayoutPanel3.Controls.Add(this.textBox2, 2, 5);
 			this.tableLayoutPanel3.Controls.Add(this.label6, 1, 6);
-			this.tableLayoutPanel3.Controls.Add(this.textBox1, 2, 1);
-			this.tableLayoutPanel3.Controls.Add(this.textBox3, 2, 3);
-			this.tableLayoutPanel3.Controls.Add(this.textBox4, 2, 4);
-			this.tableLayoutPanel3.Controls.Add(this.textBox5, 2, 5);
-			this.tableLayoutPanel3.Controls.Add(this.textBox6, 2, 6);
-			this.tableLayoutPanel3.Controls.Add(this.comboBox1, 2, 2);
+			this.tableLayoutPanel3.Controls.Add(this.comboBox3, 2, 6);
+			this.tableLayoutPanel3.Controls.Add(this.comboBox4, 2, 4);
 			this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
 			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -378,7 +367,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(163, 56);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "Sucursal";
+			this.label2.Text = "Producto";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// label3
@@ -390,44 +379,8 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(163, 56);
 			this.label3.TabIndex = 2;
-			this.label3.Text = "Telefono";
+			this.label3.Text = "Bodega";
 			this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.Location = new System.Drawing.Point(19, 186);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(163, 56);
-			this.label4.TabIndex = 3;
-			this.label4.Text = "Direccion";
-			this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(19, 242);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(163, 56);
-			this.label5.TabIndex = 4;
-			this.label5.Text = "Encargado";
-			this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(19, 298);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(163, 56);
-			this.label6.TabIndex = 5;
-			this.label6.Text = "Estado";
-			this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// textBox1
 			// 
@@ -436,37 +389,6 @@
 			this.textBox1.Size = new System.Drawing.Size(67, 22);
 			this.textBox1.TabIndex = 6;
 			// 
-			// textBox3
-			// 
-			this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox3.Location = new System.Drawing.Point(188, 133);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(588, 22);
-			this.textBox3.TabIndex = 8;
-			// 
-			// textBox4
-			// 
-			this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox4.Location = new System.Drawing.Point(188, 189);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(588, 22);
-			this.textBox4.TabIndex = 9;
-			// 
-			// textBox5
-			// 
-			this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textBox5.Location = new System.Drawing.Point(188, 245);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(588, 22);
-			this.textBox5.TabIndex = 10;
-			// 
-			// textBox6
-			// 
-			this.textBox6.Location = new System.Drawing.Point(188, 301);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(248, 22);
-			this.textBox6.TabIndex = 11;
-			// 
 			// comboBox1
 			// 
 			this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -474,74 +396,82 @@
 			this.comboBox1.Location = new System.Drawing.Point(188, 77);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(588, 24);
-			this.comboBox1.TabIndex = 12;
-			// 
-			// tabPage3
-			// 
-			this.tabPage3.Controls.Add(this.tableLayoutPanel4);
-			this.tabPage3.Location = new System.Drawing.Point(4, 25);
-			this.tabPage3.Name = "tabPage3";
-			this.tabPage3.Size = new System.Drawing.Size(855, 384);
-			this.tabPage3.TabIndex = 2;
-			this.tabPage3.Text = "Existencias";
-			this.tabPage3.UseVisualStyleBackColor = true;
-			// 
-			// tableLayoutPanel4
-			// 
-			this.tableLayoutPanel4.ColumnCount = 1;
-			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel4.Controls.Add(this.dataGridView2, 0, 1);
-			this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
-			this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-			this.tableLayoutPanel4.RowCount = 2;
-			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-			this.tableLayoutPanel4.Size = new System.Drawing.Size(855, 384);
-			this.tableLayoutPanel4.TabIndex = 0;
-			// 
-			// tableLayoutPanel5
-			// 
-			this.tableLayoutPanel5.ColumnCount = 3;
-			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-			this.tableLayoutPanel5.Controls.Add(this.comboBox2, 0, 0);
-			this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
-			this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-			this.tableLayoutPanel5.RowCount = 1;
-			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel5.Size = new System.Drawing.Size(849, 32);
-			this.tableLayoutPanel5.TabIndex = 0;
+			this.comboBox1.TabIndex = 7;
 			// 
 			// comboBox2
 			// 
 			this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(3, 3);
+			this.comboBox2.Location = new System.Drawing.Point(188, 133);
 			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(276, 24);
-			this.comboBox2.TabIndex = 0;
-			this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+			this.comboBox2.Size = new System.Drawing.Size(588, 24);
+			this.comboBox2.TabIndex = 8;
 			// 
-			// dataGridView2
+			// label4
 			// 
-			dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
-			this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-			this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-			this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.dataGridView2.Location = new System.Drawing.Point(3, 41);
-			this.dataGridView2.Name = "dataGridView2";
-			this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView2.Size = new System.Drawing.Size(849, 340);
-			this.dataGridView2.TabIndex = 1;
+			this.label4.AutoSize = true;
+			this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label4.Location = new System.Drawing.Point(19, 186);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(163, 56);
+			this.label4.TabIndex = 9;
+			this.label4.Text = "Concepto";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// Bodegas
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label5.Location = new System.Drawing.Point(19, 242);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(163, 56);
+			this.label5.TabIndex = 11;
+			this.label5.Text = "Cantidad";
+			this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// textBox2
+			// 
+			this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBox2.Location = new System.Drawing.Point(188, 245);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.Size = new System.Drawing.Size(588, 22);
+			this.textBox2.TabIndex = 12;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.label6.Location = new System.Drawing.Point(19, 298);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(163, 56);
+			this.label6.TabIndex = 13;
+			this.label6.Text = "Documento";
+			this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			// 
+			// comboBox3
+			// 
+			this.comboBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.comboBox3.FormattingEnabled = true;
+			this.comboBox3.Location = new System.Drawing.Point(188, 301);
+			this.comboBox3.Name = "comboBox3";
+			this.comboBox3.Size = new System.Drawing.Size(588, 24);
+			this.comboBox3.TabIndex = 14;
+			// 
+			// comboBox4
+			// 
+			this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.comboBox4.FormattingEnabled = true;
+			this.comboBox4.Items.AddRange(new object[] {
+            "Compras",
+            "Ventas"});
+			this.comboBox4.Location = new System.Drawing.Point(188, 189);
+			this.comboBox4.Name = "comboBox4";
+			this.comboBox4.Size = new System.Drawing.Size(588, 24);
+			this.comboBox4.TabIndex = 15;
+			this.comboBox4.Text = "Concepto";
+			this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+			// 
+			// Existencias
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -549,9 +479,9 @@
 			this.ClientSize = new System.Drawing.Size(966, 599);
 			this.Controls.Add(this.tableLayoutPanel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-			this.Name = "Bodegas";
+			this.Name = "Existencias";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Bodegas";
+			this.Text = "Existencias";
 			this.tableLayoutPanel1.ResumeLayout(false);
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tabControl1.ResumeLayout(false);
@@ -560,10 +490,6 @@
 			this.tabPage2.ResumeLayout(false);
 			this.tableLayoutPanel3.ResumeLayout(false);
 			this.tableLayoutPanel3.PerformLayout();
-			this.tabPage3.ResumeLayout(false);
-			this.tableLayoutPanel4.ResumeLayout(false);
-			this.tableLayoutPanel5.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -587,19 +513,14 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ComboBox comboBox2;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.TabPage tabPage3;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-		private System.Windows.Forms.ComboBox comboBox2;
-		private System.Windows.Forms.DataGridView dataGridView2;
+		private System.Windows.Forms.ComboBox comboBox3;
+		private System.Windows.Forms.ComboBox comboBox4;
 	}
 }

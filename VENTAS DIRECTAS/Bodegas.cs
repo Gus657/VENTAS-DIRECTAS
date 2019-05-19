@@ -72,6 +72,26 @@ namespace VENTAS_DIRECTAS
 				databaseConnection.Close();
 			}
 
+			MySqlCommand codigo2 = new MySqlCommand();
+			codigo2.Connection = databaseConnection;
+			codigo2.CommandText = ("SELECT * FROM existencias");
+			try
+			{
+				MySqlDataAdapter ejecutar = new MySqlDataAdapter();
+				ejecutar.SelectCommand = codigo2;
+				DataTable datostabla = new DataTable();
+				ejecutar.Fill(datostabla);
+				dataGridView2.DataSource = datostabla;
+				ejecutar.Update(datostabla);
+				databaseConnection.Close();
+
+			}
+			catch (Exception e)
+			{
+				MessageBox.Show("ERROR" + e.ToString());
+				databaseConnection.Close();
+			}
+
 			try
 			{
 				comboBox1.Text = "Sucursales";
@@ -84,6 +104,26 @@ namespace VENTAS_DIRECTAS
 				{
 					comboBox1.Refresh();
 					comboBox1.Items.Add(reader.GetValue(1).ToString());
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+			}
+			databaseConnection.Close();
+
+			try
+			{
+				comboBox2.Text = "Bodegas";
+				comboBox2.Items.Clear();
+
+				databaseConnection.Open();
+				MySqlCommand command = new MySqlCommand("SELECT * FROM bodega", databaseConnection);
+				MySqlDataReader reader = command.ExecuteReader();
+				while (reader.Read())
+				{
+					comboBox2.Refresh();
+					comboBox2.Items.Add(reader.GetValue(0).ToString()+" "+ reader.GetValue(1).ToString());
 				}
 			}
 			catch (Exception ex)
@@ -238,6 +278,29 @@ namespace VENTAS_DIRECTAS
 		private void button7_Click(object sender, EventArgs e)
 		{
 			this.Close();
+		}
+
+		private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			MySqlCommand codigo2 = new MySqlCommand();
+			codigo2.Connection = databaseConnection;
+			codigo2.CommandText = ("SELECT * FROM existencias where codigo_bodega = "+ comboBox2.Text[0]);
+			try
+			{
+				MySqlDataAdapter ejecutar = new MySqlDataAdapter();
+				ejecutar.SelectCommand = codigo2;
+				DataTable datostabla = new DataTable();
+				ejecutar.Fill(datostabla);
+				dataGridView2.DataSource = datostabla;
+				ejecutar.Update(datostabla);
+				databaseConnection.Close();
+
+			}
+			catch (Exception exx)
+			{
+				MessageBox.Show("ERROR" + exx.ToString());
+				databaseConnection.Close();
+			}
 		}
 	}
 }

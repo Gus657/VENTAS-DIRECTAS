@@ -114,5 +114,12 @@ namespace VENTAS_DIRECTAS
 			nuevo.MdiParent = this;
 			nuevo.Show();
 		}
+
+		private void existenciasToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Existencias nuevo = new Existencias();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
 	}
 }
