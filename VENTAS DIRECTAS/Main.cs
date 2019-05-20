@@ -128,5 +128,12 @@ namespace VENTAS_DIRECTAS
 			nuevo.MdiParent = this;
 			nuevo.Show();
 		}
+
+		private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Facturacion nuevo = new Facturacion();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
 	}
 }

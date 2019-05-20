@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-05-2019 a las 01:56:14
+-- Tiempo de generación: 20-05-2019 a las 08:00:27
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.1
 
@@ -230,7 +230,76 @@ INSERT INTO `bitacora` (`NO`, `USUARIO`, `ACCION`, `IP`, `FECHA_HORA`) VALUES
 (187, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 4:54:26 p. m.'),
 (188, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 4:54:45 p. m.'),
 (189, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 5:37:55 p. m.'),
-(190, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 5:38:12 p. m.');
+(190, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 5:38:12 p. m.'),
+(191, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:08:30 p. m.'),
+(192, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:09:12 p. m.'),
+(193, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:31:19 p. m.'),
+(194, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:31:59 p. m.'),
+(195, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:32:56 p. m.'),
+(196, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:34:00 p. m.'),
+(197, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:34:26 p. m.'),
+(198, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:34:58 p. m.'),
+(199, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:37:14 p. m.'),
+(200, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:37:31 p. m.'),
+(201, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:42:20 p. m.'),
+(202, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:42:41 p. m.'),
+(203, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:45:29 p. m.'),
+(204, 'Gustavo', 'LOG IN USUARIOS', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:45:38 p. m.'),
+(205, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:45:43 p. m.'),
+(206, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:45:56 p. m.'),
+(207, 'Gustavo', 'LOG IN USUARIOS', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:46:03 p. m.'),
+(208, 'Gustavo', 'LOG IN USUARIOS', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:46:13 p. m.'),
+(209, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:46:52 p. m.'),
+(210, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:47:33 p. m.'),
+(211, 'Gustavo', 'LOG IN USUARIOS', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:47:44 p. m.'),
+(212, 'Gustavo', 'LOG IN USUARIOS', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:48:25 p. m.'),
+(213, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:48:46 p. m.'),
+(214, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:50:39 p. m.'),
+(215, 'Gustavo', 'LOG IN USUARIOS', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:50:45 p. m.'),
+(216, 'Gustavo', 'LOG OUT USUARIOS', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:50:47 p. m.'),
+(217, 'Gustavo', 'LOG IN USUARIOS', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:51:21 p. m.'),
+(218, 'Gustavo', 'LOG OUT USUARIOS', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:51:22 p. m.'),
+(219, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 6:51:33 p. m.'),
+(220, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 9:58:29 p. m.'),
+(221, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 9:58:42 p. m.'),
+(222, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 9:59:06 p. m.'),
+(223, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 9:59:19 p. m.'),
+(224, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:24:49 p. m.'),
+(225, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:25:05 p. m.'),
+(226, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:33:24 p. m.'),
+(227, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:33:46 p. m.'),
+(228, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:35:21 p. m.'),
+(229, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:36:10 p. m.'),
+(230, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:36:52 p. m.'),
+(231, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:37:40 p. m.'),
+(232, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:40:31 p. m.'),
+(233, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:42:31 p. m.'),
+(234, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:46:44 p. m.'),
+(235, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:47:03 p. m.'),
+(236, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:48:12 p. m.'),
+(237, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:49:16 p. m.'),
+(238, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:55:43 p. m.'),
+(239, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:56:28 p. m.'),
+(240, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:57:31 p. m.'),
+(241, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 10:58:07 p. m.'),
+(242, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:00:47 p. m.'),
+(243, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:01:19 p. m.'),
+(244, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:01:52 p. m.'),
+(245, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:05:39 p. m.'),
+(246, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:06:11 p. m.'),
+(247, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:07:14 p. m.'),
+(248, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:08:03 p. m.'),
+(249, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:14:32 p. m.'),
+(250, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:15:16 p. m.'),
+(251, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:36:01 p. m.'),
+(252, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:37:04 p. m.'),
+(253, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:37:55 p. m.'),
+(254, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:40:20 p. m.'),
+(255, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:41:49 p. m.'),
+(256, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:51:03 p. m.'),
+(257, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:52:58 p. m.'),
+(258, 'Gustavo', 'LOG IN', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:58:26 p. m.'),
+(259, 'Gustavo', 'LOG OUT', '\nfe80::548:68:63ba:dc35%11\nfe80::bd74:d5b6:1520:c945%10\n192.168.56.1\n192.168.1.5', '19/05/2019 11:59:51 p. m.');
 
 -- --------------------------------------------------------
 
@@ -276,7 +345,7 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`codigo`, `nombre_completo`, `telefono`, `direccion`, `email`, `Nit`) VALUES
-(1, 'Randy Choc', '231658685', '3-56, zona 3', 'randy@psa.com', '8951-5'),
+(1, 'Randy Choc', '2316586855', '3-56, zona 3', 'randy@psa.com', '8951-5'),
 (2, 'Juan Gamez', '21356488', '3-23, zona 10', 'juan@psa.com', '5616548-5');
 
 -- --------------------------------------------------------
@@ -301,6 +370,57 @@ INSERT INTO `compras` (`codigo`, `sucursal`, `proveedor`, `fecha`) VALUES
 (2, 'Sucursal Sur', 'Manhattan', '2019-05-30'),
 (3, 'Central', 'Steren', '2019-05-08'),
 (5, 'Sucursal Norte', 'Brocs', '2019-05-20');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `detalle`
+--
+
+CREATE TABLE `detalle` (
+  `linea` int(11) NOT NULL,
+  `encabezado` int(11) NOT NULL,
+  `Producto` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  `Precio` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `detalle`
+--
+
+INSERT INTO `detalle` (`linea`, `encabezado`, `Producto`, `cantidad`, `Precio`) VALUES
+(1, 10, 'Mouse Pad', 5, 60),
+(2, 11, 'Cargador Samsung', 2, 75),
+(3, 11, 'Mouse Pad', 1, 60),
+(4, 1, 'Mouse Pad', 3, 60),
+(5, 1, 'Cargador Samsung', 4, 75),
+(6, 2, 'Cargador Samsung', 10, 75),
+(7, 2, 'Mouse Pad', 3, 60);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `encabezado`
+--
+
+CREATE TABLE `encabezado` (
+  `codigo` int(5) NOT NULL,
+  `Sucursal` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `codigo_venta` int(5) NOT NULL,
+  `Fecha` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `Nombre` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `Nit` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `direccion` text COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `encabezado`
+--
+
+INSERT INTO `encabezado` (`codigo`, `Sucursal`, `codigo_venta`, `Fecha`, `Nombre`, `Nit`, `direccion`) VALUES
+(1, 'Central', 1, '2019-05-19', 'Gu', '8526-9', 'jjn'),
+(2, 'Central', 5, '2019-05-19', 'gus', '54-6', 'laskjda');
 
 -- --------------------------------------------------------
 
@@ -357,6 +477,25 @@ INSERT INTO `existencias` (`codigo`, `codigo_producto`, `codigo_bodega`, `Cantid
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `factura`
+--
+
+CREATE TABLE `factura` (
+  `encabezado` int(5) NOT NULL,
+  `estado` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `total` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `factura`
+--
+
+INSERT INTO `factura` (`encabezado`, `estado`, `total`) VALUES
+(2, 'Cancelada', 930);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `productos`
 --
 
@@ -372,7 +511,6 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`codigo`, `nombre`, `presentacion`, `precio`) VALUES
-(1, 'Teclado Bluetooth', '14 Pulgadas', 100),
 (2, 'Mouse Pad', '10 Pulgadas', 60),
 (3, 'Cargador Samsung', '9mAh, Color blanco', 75);
 
@@ -396,7 +534,7 @@ CREATE TABLE `proveedor` (
 --
 
 INSERT INTO `proveedor` (`codigo`, `nombre`, `telefono`, `direccion`, `email`, `nit`) VALUES
-(1, 'Manhattan', '68458645', '3-98, zona 9', 'Manhattan@tech.com', '684531-5'),
+(1, 'Manhattan', '684586455', '3-98, zona 9', 'Manhattan@tech.com', '684531-5'),
 (2, 'Brocs', '845316516', '23-96, zon 14', 'brocs@tech.com', '894651-7'),
 (3, 'Steren', '222665458', '32-85, zona 10', 'steren@tech.com', '2351655-6');
 
@@ -442,6 +580,7 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`Usuario`, `Password`, `Nivel`) VALUES
 ('Gustavo', 'b4288d9c0ec0a1841b3b3728321e7088', 0),
+('Juan', '878da13c8bbf0f737224207b1e7595b6', 1),
 ('Randy', '2823f4797102ce1a1aec05359cc16dd9', 1);
 
 -- --------------------------------------------------------
@@ -499,6 +638,18 @@ ALTER TABLE `compras`
   ADD KEY `cod_proveedor` (`proveedor`);
 
 --
+-- Indices de la tabla `detalle`
+--
+ALTER TABLE `detalle`
+  ADD PRIMARY KEY (`linea`);
+
+--
+-- Indices de la tabla `encabezado`
+--
+ALTER TABLE `encabezado`
+  ADD PRIMARY KEY (`codigo`);
+
+--
 -- Indices de la tabla `entradas_salidas`
 --
 ALTER TABLE `entradas_salidas`
@@ -511,6 +662,12 @@ ALTER TABLE `existencias`
   ADD PRIMARY KEY (`codigo`),
   ADD KEY `codigo_producto` (`codigo_producto`),
   ADD KEY `cod_bodega` (`codigo_bodega`);
+
+--
+-- Indices de la tabla `factura`
+--
+ALTER TABLE `factura`
+  ADD PRIMARY KEY (`encabezado`);
 
 --
 -- Indices de la tabla `productos`
@@ -552,7 +709,7 @@ ALTER TABLE `ventas`
 -- AUTO_INCREMENT de la tabla `bitacora`
 --
 ALTER TABLE `bitacora`
-  MODIFY `NO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=191;
+  MODIFY `NO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=260;
 
 --
 -- AUTO_INCREMENT de la tabla `bodega`
@@ -564,13 +721,25 @@ ALTER TABLE `bodega`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `codigo` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `codigo` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `compras`
 --
 ALTER TABLE `compras`
   MODIFY `codigo` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT de la tabla `detalle`
+--
+ALTER TABLE `detalle`
+  MODIFY `linea` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT de la tabla `encabezado`
+--
+ALTER TABLE `encabezado`
+  MODIFY `codigo` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `entradas_salidas`
