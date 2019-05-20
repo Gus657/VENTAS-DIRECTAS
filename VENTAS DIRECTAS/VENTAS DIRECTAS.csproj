@@ -56,11 +56,23 @@
     <Compile Include="Bodegas.Designer.cs">
       <DependentUpon>Bodegas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Existencias.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Existencias.Designer.cs">
       <DependentUpon>Existencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn_Users.Designer.cs">
+      <DependentUpon>LogIn_Users.cs</DependentUpon>
     </Compile>
     <Compile Include="Ventas.cs">
       <SubType>Form</SubType>
@@ -115,8 +127,14 @@
     <EmbeddedResource Include="Bodegas.resx">
       <DependentUpon>Bodegas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Existencias.resx">
       <DependentUpon>Existencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn_Users.resx">
+      <DependentUpon>LogIn_Users.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>

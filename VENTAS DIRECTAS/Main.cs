@@ -121,5 +121,12 @@ namespace VENTAS_DIRECTAS
 			nuevo.MdiParent = this;
 			nuevo.Show();
 		}
+
+		private void catalogosToolStripMenuItem2_Click(object sender, EventArgs e)
+		{
+			LogIn_Users nuevo = new LogIn_Users();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
 	}
 }
