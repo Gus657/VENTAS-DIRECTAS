@@ -15,7 +15,7 @@ namespace VENTAS_DIRECTAS
 	
 	public partial class Facturacion : Form
 	{
-		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username =root; password =; database =ventasdirectas");
+		MySqlConnection databaseConnection = new MySqlConnection("datasource = 192.168.1.5; port = 3306; username =repl; password =slavepassword; database =ventasdirectas");
 
 
 		public Facturacion()
@@ -29,19 +29,14 @@ namespace VENTAS_DIRECTAS
 			if (tabControl1.SelectedIndex.Equals(0))
 			{
 				button1.Enabled = false; button1.BackColor = System.Drawing.Color.Gray;
-				button3.Enabled = false; button3.BackColor = System.Drawing.Color.Gray;
 				button4.Enabled = false; button4.BackColor = System.Drawing.Color.Gray;
-
-				button2.Enabled = true; button2.BackColor = System.Drawing.Color.White;
 				button5.Enabled = true; button5.BackColor = System.Drawing.Color.White;
 				button6.Enabled = true; button6.BackColor = System.Drawing.Color.White;
 			}
 			else
 			{
-				button2.Enabled = false; button2.BackColor = System.Drawing.Color.Gray;
 				button5.Enabled = false; button5.BackColor = System.Drawing.Color.Gray;
 				button6.Enabled = false; button6.BackColor = System.Drawing.Color.Gray;
-				button3.Enabled = false; button3.BackColor = System.Drawing.Color.Gray;
 
 
 				button1.Enabled = true; button1.BackColor = System.Drawing.Color.White;
@@ -311,7 +306,7 @@ namespace VENTAS_DIRECTAS
 					}
 					catch (Exception ex)
 					{
-						MessageBox.Show("\tERROR!!\nVerifique: Los datos.\n\tGRACIAS!!" + ex.ToString());
+						MessageBox.Show("\tERROR!!\nVerifique: Los datos.\n\tGRACIAS!!" + ex.Message);
 						databaseConnection.Close();
 					}
 				}
@@ -356,19 +351,15 @@ namespace VENTAS_DIRECTAS
 			if (tabControl1.SelectedIndex.Equals(0))
 			{
 				button1.Enabled = false; button1.BackColor = System.Drawing.Color.Gray;
-				button3.Enabled = false; button3.BackColor = System.Drawing.Color.Gray;
 				button4.Enabled = false; button4.BackColor = System.Drawing.Color.Gray;
 
-				button2.Enabled = true; button2.BackColor = System.Drawing.Color.White;
 				button5.Enabled = true; button5.BackColor = System.Drawing.Color.White;
 				button6.Enabled = true; button6.BackColor = System.Drawing.Color.White;
 			}
 			else
 			{
-				button2.Enabled = false; button2.BackColor = System.Drawing.Color.Gray;
 				button5.Enabled = false; button5.BackColor = System.Drawing.Color.Gray;
 				button6.Enabled = false; button6.BackColor = System.Drawing.Color.Gray;
-				button3.Enabled = false; button3.BackColor = System.Drawing.Color.Gray;
 
 
 				button1.Enabled = true; button1.BackColor = System.Drawing.Color.White;
@@ -377,21 +368,6 @@ namespace VENTAS_DIRECTAS
 			}
 		}
 
-		private void button2_Click(object sender, EventArgs e)
-		{
-			
-			textBox3.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-			//comboBox5.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-			//comboBox6.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-			textBox4.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-			tabControl1.SelectedIndex = 3;
-			button3.Enabled = true; button3.BackColor = System.Drawing.Color.White;
-			button1.Enabled = false; button1.BackColor = System.Drawing.Color.Gray;
-
-			//comboBox5.Enabled = false;
-			//comboBox6.Enabled = false;
-			textBox4.Enabled = false;
-		}
 
 		private void button4_Click(object sender, EventArgs e)
 		{
@@ -408,33 +384,6 @@ namespace VENTAS_DIRECTAS
 			this.Close();
 		}
 
-		private void comboBox7_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			try
-			{
-				//comboBox8.Text = "Documento";
-				//comboBox8.Items.Clear();
-
-				databaseConnection.Open();
-				MySqlCommand command = new MySqlCommand("SELECT * FROM " + "" + "", databaseConnection);
-				MySqlDataReader reader = command.ExecuteReader();
-				while (reader.Read())
-				{
-					//comboBox8.Refresh();
-					//comboBox8.Items.Add(reader.GetValue(0).ToString());
-				}
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show(ex.Message);
-			}
-			databaseConnection.Close();
-		}
-
-		private void comboBox8_SelectedIndexChanged(object sender, EventArgs e)
-		{
-
-		}
 
 		private void button8_Click(object sender, EventArgs e)
 		{

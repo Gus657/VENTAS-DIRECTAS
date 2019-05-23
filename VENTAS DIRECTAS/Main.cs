@@ -14,7 +14,7 @@ namespace VENTAS_DIRECTAS
 {
 	public partial class Main : Form
 	{
-		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username =root; password =; database =ventasdirectas");
+		MySqlConnection databaseConnection = new MySqlConnection("datasource = 192.168.1.5; port = 3306; username =repl; password =slavepassword; database =ventasdirectas");
 		string usuario;
 		public Main(string user)
 		{
@@ -51,7 +51,7 @@ namespace VENTAS_DIRECTAS
 			IPAddress[] localIPs = Dns.GetHostAddresses(Dns.GetHostName());
 			foreach (IPAddress addr in localIPs)
 			{
-				IP += "\n" + addr.ToString();
+				IP += "   |   " + addr.ToString();
 			}
 			databaseConnection.Open();
 			Bitacora("LOG OUT", IP, usuario);
@@ -132,6 +132,13 @@ namespace VENTAS_DIRECTAS
 		private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			Facturacion nuevo = new Facturacion();
+			nuevo.MdiParent = this;
+			nuevo.Show();
+		}
+
+		private void perfilesToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Bitacora nuevo = new Bitacora();
 			nuevo.MdiParent = this;
 			nuevo.Show();
 		}

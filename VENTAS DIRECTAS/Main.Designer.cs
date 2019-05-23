@@ -152,14 +152,14 @@
 			// facturacionToolStripMenuItem
 			// 
 			this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
-			this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+			this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
 			this.facturacionToolStripMenuItem.Text = "Facturacion";
 			this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.facturacionToolStripMenuItem_Click);
 			// 
 			// existenciasToolStripMenuItem
 			// 
 			this.existenciasToolStripMenuItem.Name = "existenciasToolStripMenuItem";
-			this.existenciasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+			this.existenciasToolStripMenuItem.Size = new System.Drawing.Size(173, 24);
 			this.existenciasToolStripMenuItem.Text = "Existencias";
 			this.existenciasToolStripMenuItem.Click += new System.EventHandler(this.existenciasToolStripMenuItem_Click);
 			// 
@@ -181,15 +181,16 @@
 			// catalogosToolStripMenuItem2
 			// 
 			this.catalogosToolStripMenuItem2.Name = "catalogosToolStripMenuItem2";
-			this.catalogosToolStripMenuItem2.Size = new System.Drawing.Size(149, 24);
+			this.catalogosToolStripMenuItem2.Size = new System.Drawing.Size(180, 24);
 			this.catalogosToolStripMenuItem2.Text = "Usuarios";
 			this.catalogosToolStripMenuItem2.Click += new System.EventHandler(this.catalogosToolStripMenuItem2_Click);
 			// 
 			// perfilesToolStripMenuItem
 			// 
 			this.perfilesToolStripMenuItem.Name = "perfilesToolStripMenuItem";
-			this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
+			this.perfilesToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
 			this.perfilesToolStripMenuItem.Text = "Bitacora";
+			this.perfilesToolStripMenuItem.Click += new System.EventHandler(this.perfilesToolStripMenuItem_Click);
 			// 
 			// ayudaToolStripMenuItem
 			// 

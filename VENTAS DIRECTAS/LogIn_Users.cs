@@ -14,8 +14,7 @@ namespace VENTAS_DIRECTAS
 {
 	public partial class LogIn_Users : Form
 	{
-		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username =root; password =; database =ventasdirectas");
-		int log;
+		MySqlConnection databaseConnection = new MySqlConnection("datasource = 192.168.1.5; port = 3306; username =repl; password =slavepassword; database =ventasdirectas"); int log;
 		public LogIn_Users()
 		{
 			InitializeComponent();
@@ -87,7 +86,7 @@ namespace VENTAS_DIRECTAS
 					IPAddress[] localIPs = Dns.GetHostAddresses(Dns.GetHostName());
 					foreach (IPAddress addr in localIPs)
 					{
-						IP += "\n" + addr.ToString();
+						IP += "   |   " + addr.ToString();
 					}
 					databaseConnection.Close();
 					databaseConnection.Open();

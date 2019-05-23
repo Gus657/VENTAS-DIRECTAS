@@ -9,18 +9,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using MySql.Data.MySqlClient;
+using System.Management;
+using System.Management.Instrumentation;
+using System;
 
 namespace VENTAS_DIRECTAS
 {
 	public partial class LogIn : Form
 	{
-		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username =root; password =; database =ventasdirectas");
+		MySqlConnection databaseConnection = new MySqlConnection("datasource = 192.168.1.5; port = 3306; username =repl; password =slavepassword; database =ventasdirectas");
 		int log;
 		public LogIn()
 		{
 			InitializeComponent();
 		}
 
+		
 		void Bitacora(string Accion, string ip )
 		{
 			string query = "INSERT INTO bitacora (USUARIO,ACCION,IP,FECHA_HORA) VALUES ('" + textBox1.Text + "','" + Accion + "','" + ip + "','" + DateTime.Now.ToString("G") + "')";
@@ -56,7 +60,7 @@ namespace VENTAS_DIRECTAS
 					IPAddress[] localIPs = Dns.GetHostAddresses(Dns.GetHostName());
 					foreach (IPAddress addr in localIPs)
 					{
-						IP += "\n" + addr.ToString();
+						IP += "   |   " + addr.ToString();
 					}
 					Bitacora("LOG IN",IP);
 					

@@ -15,7 +15,7 @@ namespace VENTAS_DIRECTAS
 	
 	public partial class Sucursales : Form
 	{
-		MySqlConnection databaseConnection = new MySqlConnection("datasource = 127.0.0.1; port = 3306; username =root; password =; database =ventasdirectas");
+		MySqlConnection databaseConnection = new MySqlConnection("datasource = 192.168.1.5; port = 3306; username =repl; password =slavepassword; database =ventasdirectas");
 
 
 		public Sucursales()
